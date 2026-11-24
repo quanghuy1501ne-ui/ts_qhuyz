@@ -1,0 +1,5 @@
+Thu muc nay gom:
+  index.html     - trang web
+  package.json   - khai bao thu vien can cai (Vercel tu cai)
+  api/           - cac ham chay tren may chu Vercel (nhac, dang nhap admin)
+Keo tha TOAN BO noi dung thu muc nay len GitHub (giu nguyen thu muc api).
