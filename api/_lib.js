@@ -1,3 +1,8 @@
+// Use whichever *_READ_WRITE_TOKEN variable Vercel created (it may carry a prefix)
+if (!process.env.BLOB_READ_WRITE_TOKEN) {
+  const k = Object.keys(process.env).find(k => /_READ_WRITE_TOKEN$/.test(k));
+  if (k) process.env.BLOB_READ_WRITE_TOKEN = process.env[k];
+}
 // Shared helpers for the music API (admin check, blob naming)
 function creds(req){
   let u = req.headers['x-user'], p = req.headers['x-pass'];
